@@ -12,7 +12,7 @@ using OnlineShoppingCart.Data;
 namespace OnlineShoppingCart.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240506062234_InitDb")]
+    [Migration("20240514151300_InitDb")]
     partial class InitDb
     {
         /// <inheritdoc />
@@ -364,7 +364,7 @@ namespace OnlineShoppingCart.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("OnlineShoppingCart.Models.Customer", b =>
@@ -416,7 +416,7 @@ namespace OnlineShoppingCart.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customer");
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("OnlineShoppingCart.Models.Product", b =>
@@ -437,6 +437,9 @@ namespace OnlineShoppingCart.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("EndedDate")

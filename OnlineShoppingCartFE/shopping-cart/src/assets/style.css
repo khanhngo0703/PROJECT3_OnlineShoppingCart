@@ -149,6 +149,9 @@ body {
 #sidebar .side-menu li a.logout {
 	color: var(--red);
 }
+#sidebar .side-menu li a.logout:hover {
+	cursor: pointer;
+}
 #sidebar .side-menu.top li a:hover {
 	color: var(--blue);
 }
@@ -205,7 +208,7 @@ body {
 #content nav a {
 	color: var(--dark);
 }
-#content nav .bx.bx-menu {
+#content nav .bx.icon-bars {
 	cursor: pointer;
 	color: var(--dark);
 }
@@ -454,7 +457,7 @@ body {
 	padding: 16px 0;
 }
 #content main .table-data .order table tr td:first-child {
-	display: flex;
+	/* display: flex; */
 	align-items: center;
 	grid-gap: 12px;
 	padding-left: 6px;
@@ -517,11 +520,6 @@ body {
 }
 /* MAIN */
 /* CONTENT */
-
-
-
-
-
 
 
 
@@ -590,3 +588,6 @@ body {
 		min-width: 420px;
 	}
 }
+
+
+

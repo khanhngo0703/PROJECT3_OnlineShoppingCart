@@ -51,7 +51,7 @@ namespace OnlineShoppingCart.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Category",
+                name: "Categories",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -68,11 +68,11 @@ namespace OnlineShoppingCart.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Category", x => x.Id);
+                    table.PrimaryKey("PK_Categories", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Customer",
+                name: "Customers",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -93,7 +93,7 @@ namespace OnlineShoppingCart.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Customer", x => x.Id);
+                    table.PrimaryKey("PK_Customers", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -212,6 +212,7 @@ namespace OnlineShoppingCart.Migrations
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     ImageProduct = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     BarCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: true),
                     StartedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     StartedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -226,9 +227,9 @@ namespace OnlineShoppingCart.Migrations
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_Category_CategoryId",
+                        name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
-                        principalTable: "Category",
+                        principalTable: "Categories",
                         principalColumn: "Id");
                 });
 
@@ -255,9 +256,9 @@ namespace OnlineShoppingCart.Migrations
                 {
                     table.PrimaryKey("PK_Bills", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Bills_Customer_CustomerId",
+                        name: "FK_Bills_Customers_CustomerId",
                         column: x => x.CustomerId,
-                        principalTable: "Customer",
+                        principalTable: "Customers",
                         principalColumn: "Id");
                 });
 
@@ -389,10 +390,10 @@ namespace OnlineShoppingCart.Migrations
                 name: "Products");
 
             migrationBuilder.DropTable(
-                name: "Customer");
+                name: "Customers");
 
             migrationBuilder.DropTable(
-                name: "Category");
+                name: "Categories");
         }
     }
 }

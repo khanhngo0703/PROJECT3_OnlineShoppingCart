@@ -97,3 +97,4 @@ C:\PROJECT_3\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\net7.0\refint\Onlin
 C:\PROJECT_3\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\net7.0\OnlineShoppingCart.pdb
 C:\PROJECT_3\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\net7.0\OnlineShoppingCart.genruntimeconfig.cache
 C:\PROJECT_3\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\net7.0\ref\OnlineShoppingCart.dll
+C:\PROJECT_3\OnlineShoppingCart\OnlineShoppingCart\obj\Debug\net7.0\OnlineShoppingCart.sourcelink.json

@@ -90,15 +90,8 @@ namespace OnlineShoppingCart
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                ContentTypeProvider = new FileExtensionContentTypeProvider
-                {
-                    // Thiết lập kiểu MIME cho các tệp JavaScript
-                    Mappings = { [".js"] = "application/javascript" }
-                }
-            });
-            //app.UseStaticFiles();
+            
+            app.UseStaticFiles();
 
             app.UseCors("AllowAll");
             

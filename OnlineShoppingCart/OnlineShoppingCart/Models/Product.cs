@@ -8,6 +8,8 @@ namespace OnlineShoppingCart.Models
         public decimal? Price { get; set; }
         public string? ImageProduct { get; set; }
         public string? BarCode { get; set; }
+        public string? Description { get; set; }
+
         public int? CategoryId { get; set; }
 
         [ForeignKey("CategoryId")]

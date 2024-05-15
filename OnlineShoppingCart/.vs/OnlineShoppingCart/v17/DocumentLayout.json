@@ -3,40 +3,43 @@
   "WorkspaceRootPath": "C:\\PROJECT_3\\OnlineShoppingCart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\billdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\billdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\common\\billdto\\requestbillfulldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\common\\billdto\\requestbillfulldetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\authenticationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\authenticationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineShoppingCart/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\forgotpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\forgotpasswordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\services\\mailkitemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\services\\mailkitemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|c:\\project_3\\onlineshoppingcart\\onlineshoppingcart\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1C4E36-162D-424F-9B9C-5D964D5C618B}|OnlineShoppingCart\\OnlineShoppingCart.csproj|solutionrelative:onlineshoppingcart\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,116 +49,125 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\BaseController.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\BaseController.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAqwD4AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T17:43:02.124Z"
+              "WhenOpened": "2024-05-14T15:02:57.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Models\\Product.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Models\\Product.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T15:02:25.787Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BillsController.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BillsController.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\BillsController.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BillsController.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\BillsController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwB4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T07:43:17.213Z"
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineShoppingCart/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-14T14:54:20.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Program.cs",
               "RelativeDocumentMoniker": "OnlineShoppingCart\\Program.cs",
               "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Program.cs",
               "RelativeToolTip": "OnlineShoppingCart\\Program.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAAFoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T07:40:30.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T16:53:38.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RequestBillFullDetail.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Common\\BillDTO\\RequestBillFullDetail.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Common\\BillDTO\\RequestBillFullDetail.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Common\\BillDTO\\RequestBillFullDetail.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Common\\BillDTO\\RequestBillFullDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
+              "DocumentIndex": 4,
+              "Title": "ForgotPasswordController.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\ForgotPasswordController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\ForgotPasswordController.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\ForgotPasswordController.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\ForgotPasswordController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T07:38:59.961Z"
+              "WhenOpened": "2024-05-13T16:45:08.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AuthenticationsController.cs",
               "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\AuthenticationsController.cs",
               "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\AuthenticationsController.cs",
               "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\AuthenticationsController.cs",
               "RelativeToolTip": "OnlineShoppingCart\\Controllers\\AuthenticationsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAAG4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T07:38:37.992Z"
+              "WhenOpened": "2024-05-13T15:46:40.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\BaseController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwBoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:43:02.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MailKitEmailService.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Services\\MailKitEmailService.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Services\\MailKitEmailService.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Services\\MailKitEmailService.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Services\\MailKitEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:45:54.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\BaseRepository.cs",
               "RelativeDocumentMoniker": "OnlineShoppingCart\\Repository\\BaseRepository.cs",
               "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\BaseRepository.cs",
               "RelativeToolTip": "OnlineShoppingCart\\Repository\\BaseRepository.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAD0AAAAfAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwDEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T06:38:36.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BillDetailsController.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BillDetailsController.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\BillDetailsController.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\BillDetailsController.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\BillDetailsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "OnlineShoppingCart\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "OnlineShoppingCart\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T07:43:23.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Repository\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T06:30:51.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "OnlineShoppingCart\\Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\PROJECT_3\\OnlineShoppingCart\\OnlineShoppingCart\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "OnlineShoppingCart\\Repository\\ProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T06:25:47.998Z"
+              "WhenOpened": "2024-05-13T14:52:42.126Z"
             }
           ]
         }
