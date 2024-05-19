@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomePageView from './views/HomePageView.vue';
+import CategoryDetailsPageView from './views/CategoryDetailsPageView.vue';
+import ProductDetailsPageView from './views/ProductDetailsPageView.vue';
+import CartView from './views/CartView.vue';
+
+
 import LoginPageView from './views/LoginPageView.vue';
 import DashboardView from './views/admin/DashboardView.vue';
 import LoginAdminView from './views/admin/LoginAdminView.vue';
@@ -16,6 +21,21 @@ const routes = [
         path: '/',
         name: 'HomePageView',
         component: HomePageView,
+    },
+    {
+        path: '/category/:categoryId',
+        name: 'CategoryDetailsPageView',
+        component: CategoryDetailsPageView,
+    },
+    {
+        path: '/productdetails/:id',
+        name: 'ProductDetailsPageView',
+        component: ProductDetailsPageView,
+    },
+    {
+        path: '/cart',
+        name: 'CartView',
+        component: CartView,
     },
     {
         path: '/admin',

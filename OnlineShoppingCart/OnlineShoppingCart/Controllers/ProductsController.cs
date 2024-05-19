@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using OnlineShoppingCart.Models;
 using OnlineShoppingCart.Repository;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnlineShoppingCart.Controllers
@@ -12,8 +14,11 @@ namespace OnlineShoppingCart.Controllers
     [ApiController]
     public class ProductsController : BaseController<Product>
     {
-        public ProductsController(IBaseRepository<Product> repository) : base(repository)
+        private readonly IProductRepository _productRepository;
+
+        public ProductsController(IBaseRepository<Product> repository, IProductRepository productRepository) : base(repository)
         {
+            _productRepository = productRepository;
         }
 
         [HttpPost("UploadImage")]
@@ -53,6 +58,17 @@ namespace OnlineShoppingCart.Controllers
             {
                 return StatusCode(500, $"Internal server error: {ex}");
             }
+        }
+
+        [HttpGet("category/{categoryId}")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsByCategoryId(int categoryId)
+        {
+            var products = await _productRepository.GetProductsByCategoryIdAsync(categoryId);
+            if (products == null)
+            {
+                return NotFound();
+            }
+            return Ok(products);
         }
     }
 }

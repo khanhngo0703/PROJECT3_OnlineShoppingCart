@@ -43,8 +43,6 @@
                             </li>
                             <li>
                                 <label>Description <span class="required">*</span></label>
-                                <!-- <input type="textarea" name="" class="field-long" placeholder="Description"
-                                    v-model="currentProduct.description" /> -->
                                     <textarea name="field5" id="field5" class="field-long field-textarea" v-model="currentProduct.description"></textarea>
                             </li>
                             <li>
