@@ -11,6 +11,5 @@ namespace OnlineShoppingCart.Models
 
         [ForeignKey("CustomerId")]
         public virtual Customer? Customer { get; set; }
-        public virtual ICollection<BillDetail>? BillDetails { get; set; }
     }
 }

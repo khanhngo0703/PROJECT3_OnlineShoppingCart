@@ -27,6 +27,8 @@ namespace OnlineShoppingCart
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<IBillRepository, BillRepository>();
+            builder.Services.AddScoped<IBillDetailRepository, BillDetailRepository>();
+
 
 
             builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)

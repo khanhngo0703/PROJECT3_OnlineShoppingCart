@@ -26,7 +26,7 @@
                     </form>
                     <table>
                         <thead>
-                            <tr style="text-align: center;">
+                            <tr class="header-text">
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Action</th>

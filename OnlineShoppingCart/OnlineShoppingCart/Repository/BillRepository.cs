@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using OnlineShoppingCart.Common.BillDTO;
 using OnlineShoppingCart.Data;
 using OnlineShoppingCart.Models;
@@ -7,6 +8,8 @@ namespace OnlineShoppingCart.Repository
     public interface IBillRepository : IBaseRepository<Bill>
     {
         Task<Bill> InsertFullDetailAsync(RequestBillFullDetail request);
+        Task<List<BillCustomerDetailDTO>> GetBillCustomerDetailsAsync();
+
     }
     public class BillRepository : BaseRepository<Bill>, IBillRepository
     {
@@ -24,7 +27,8 @@ namespace OnlineShoppingCart.Repository
                     {
                         Code = request.Code,
                         Date = request.Date,
-                        PhoneNumber = request.PhoneNumber
+                        PhoneNumber = request.PhoneNumber,
+                        CustomerId = request.CustomerId // Gán CustomerId vào Bill
                     };
 
                     _context.Bills.Add(bill);
@@ -56,6 +60,26 @@ namespace OnlineShoppingCart.Repository
             }
             return null;
         }
+
+        public async Task<List<BillCustomerDetailDTO>> GetBillCustomerDetailsAsync()
+        {
+            var result = await (from b in _context.Bills
+                                join c in _context.Customers on b.CustomerId equals c.Id
+                                select new BillCustomerDetailDTO
+                                {
+                                    BillId = b.Id,
+                                    BillCode = b.Code,
+                                    BillDate = b.Date,
+                                    CustomerId = c.Id,
+                                    CustomerFullName = c.FullName,
+                                    CustomerEmail = c.Email,
+                                    CustomerPhoneNumber = c.PhoneNumber,
+                                    CustomerAddress = c.Address
+                                }).ToListAsync();
+
+            return result;
+        }
+
     }
 }
 

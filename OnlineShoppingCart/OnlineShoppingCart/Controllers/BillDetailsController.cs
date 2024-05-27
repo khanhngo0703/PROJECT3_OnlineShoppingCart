@@ -9,8 +9,23 @@ namespace OnlineShoppingCart.Controllers
     [Route("api/[controller]")]
     public class BillDetailsController : BaseController<BillDetail>
     {
-        public BillDetailsController(IBaseRepository<BillDetail> repository) : base(repository)
+        private readonly IBillDetailRepository _billDetailRepository;
+
+        public BillDetailsController(IBaseRepository<BillDetail> repository, IBillDetailRepository billDetailRepository) : base(repository)
         {
+            _billDetailRepository = billDetailRepository;
+        }
+
+        [HttpGet("details/{billId}")]
+        public async Task<IActionResult> GetBillDetailsByBillId(int billId)
+        {
+            var billDetails = await _billDetailRepository.GetBillDetailsByBillIdAsync(billId);
+            if (billDetails == null || !billDetails.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(billDetails);
         }
     }
 }

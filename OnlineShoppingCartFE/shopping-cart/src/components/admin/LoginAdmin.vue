@@ -75,30 +75,30 @@ export default {
                     password: this.loginForm.password
                 });
 
-                console.log(response);
-
-
                 if (response.status === 200) {
-                    console.log('Đăng nhập thành công:', response.data);
-                    localStorage.setItem('token', response.data.token);
-                    this.$router.push('/admin').then(() => {
-                        window.location.reload();
-                    });
-                } else if (response.status === 400) {
-                    console.error('Đăng nhập không thành công:', response.response.data);
-                    if (response.response.data) {
-                        this.error = response.response.data; // Sử dụng thông báo lỗi từ API
+                    const data = response.data;
+                    const roles = data.roles;
+
+                    console.log(roles);
+
+
+                    if (roles.includes('ADMIN')) {
+                        // localStorage.setItem('token', data.token);
+                        localStorage.setItem('adminToken', data.token);
+                        console.log('Đăng nhập thành công:', data);
+                        this.$router.push('/admin').then(() => {
+                            window.location.reload();
+                        });
                     } else {
-                        this.error = 'Unknown error occurred!'; // Nếu không có thông báo lỗi từ API
+                        console.log('Đăng nhập thành công nhưng không phải admin:', data);
+                        this.error = 'Bạn không có quyền truy cập vào trang admin.';
                     }
                 } else {
-                    console.error('Đăng nhập không thành công:', response.statusText);
-                    this.error = 'Unknown error occurred!'; // Hiển thị thông báo lỗi mặc định
+                    this.error = response.data.message || 'Unknown error occurred!';
                 }
-
             } catch (error) {
                 console.error('Đã xảy ra lỗi khi đăng nhập:', error);
-                this.error = error.response.data; // Hiển thị thông báo lỗi khi có lỗi trong quá trình đăng nhập
+                this.error = error.response?.data.message || 'Unknown error occurred!';
             }
         }
     },

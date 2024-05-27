@@ -173,3 +173,7 @@ form select {
 .save-modal:hover {
     background-color: #45a049;
 }
+
+.header-text th {
+    text-align: center !important;
+}

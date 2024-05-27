@@ -16,7 +16,7 @@ namespace OnlineShoppingCart.Services
 
             using var client = new SmtpClient();
             await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls); // Sử dụng STARTTLS
-            await client.AuthenticateAsync("khanhcr2807@gmail.com", "zvnl uorv fmhv xgwt"); // Thay bằng mật khẩu ứng dụng của bạn
+            await client.AuthenticateAsync("khanhcr2807@gmail.com", "josw xbql dlcj atxj"); // Thay bằng mật khẩu ứng dụng của bạn
             await client.SendAsync(message);
             await client.DisconnectAsync(true);
         }

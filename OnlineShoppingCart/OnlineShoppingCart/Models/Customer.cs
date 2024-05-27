@@ -9,7 +9,6 @@ namespace OnlineShoppingCart.Models
         public string? Address { get; set; }
         public string? Note { get; set; }
 
-        public virtual ICollection<Bill>? Bills { get; set; }
 
     }
 }

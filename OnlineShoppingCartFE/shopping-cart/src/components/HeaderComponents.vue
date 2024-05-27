@@ -7,11 +7,14 @@
                 <div class="header-top-inner">
                     <div class="cnt-account">
                         <ul class="list-unstyled">
-                            <li><a href="#"><i class="icon fa fa-user"></i>My Account</a></li>
+                            <li v-if="username"><a href="#"><i class="icon fa fa-user"></i>{{ username }}</a></li>
+                            <li v-else><router-link to="/login"><i class="icon fa fa-lock"></i>Login</router-link></li>
                             <li><a href="#"><i class="icon fa fa-heart"></i>Wishlist</a></li>
                             <li><a href="#"><i class="icon fa fa-shopping-cart"></i>My Cart</a></li>
                             <li><a href="#"><i class="icon fa fa-check"></i>Checkout</a></li>
-                            <li><a href="#"><i class="icon fa fa-lock"></i>Login</a></li>
+                            <li v-if="username" @click="logout"><a href="#"><i
+                                        class="icon fa fa-sign-out"></i>Logout</a></li>
+                            <!-- <li ><router-link to="/login"><i class="icon fa fa-lock"></i>Login</router-link></li> -->
                         </ul>
                     </div>
                     <!-- /.cnt-account -->
@@ -173,7 +176,7 @@
                                     <li class="dropdown"> <router-link
                                             :to="{ name: 'CategoryDetailsPageView', params: { categoryId: c.id } }"
                                             data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">{{
-                                            c.categoryName }}</router-link>
+                                                c.categoryName }}</router-link>
                                     </li>
                                 </ul>
 
@@ -199,15 +202,14 @@
 </template>
 <script>
 import axios from 'axios';
+
 export default {
     name: "HeaderHomePage",
-    components: {
-
-    },
     data() {
         return {
             categoryData: [],
-            searchKeyword: ''
+            searchKeyword: '',
+            username: ''
         }
     },
     methods: {
@@ -222,11 +224,19 @@ export default {
         },
         onSearchClick() {
             this.$emit('search', this.searchKeyword);
+        },
+        logout() {
+            localStorage.removeItem('username');
+            this.username = '';
+            localStorage.removeItem('customerToken');
+            this.$router.push('/');
         }
     },
     mounted() {
         this.loadCategoryData();
+        this.username = localStorage.getItem('username');
     }
 }
 </script>
+
 <style></style>

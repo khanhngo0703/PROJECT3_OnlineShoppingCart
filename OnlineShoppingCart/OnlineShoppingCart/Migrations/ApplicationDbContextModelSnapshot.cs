@@ -527,7 +527,7 @@ namespace OnlineShoppingCart.Migrations
             modelBuilder.Entity("OnlineShoppingCart.Models.Bill", b =>
                 {
                     b.HasOne("OnlineShoppingCart.Models.Customer", "Customer")
-                        .WithMany("Bills")
+                        .WithMany()
                         .HasForeignKey("CustomerId");
 
                     b.Navigation("Customer");
@@ -536,7 +536,7 @@ namespace OnlineShoppingCart.Migrations
             modelBuilder.Entity("OnlineShoppingCart.Models.BillDetail", b =>
                 {
                     b.HasOne("OnlineShoppingCart.Models.Bill", "Bill")
-                        .WithMany("BillDetails")
+                        .WithMany()
                         .HasForeignKey("BillId");
 
                     b.HasOne("OnlineShoppingCart.Models.Product", "Product")
@@ -557,19 +557,9 @@ namespace OnlineShoppingCart.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("OnlineShoppingCart.Models.Bill", b =>
-                {
-                    b.Navigation("BillDetails");
-                });
-
             modelBuilder.Entity("OnlineShoppingCart.Models.Category", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("OnlineShoppingCart.Models.Customer", b =>
-                {
-                    b.Navigation("Bills");
                 });
 #pragma warning restore 612, 618
         }

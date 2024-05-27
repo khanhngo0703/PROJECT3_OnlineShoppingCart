@@ -33,33 +33,34 @@ namespace OnlineShoppingCart.Controllers
             string username = model.Username;
             string password = model.Password;
 
-            // Kiểm tra xem username và password có được cung cấp không
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 return BadRequest("Vui lòng cung cấp username và password.");
             }
 
-            // Tìm kiếm người dùng trong cơ sở dữ liệu bằng username
             var user = await _userManager.FindByNameAsync(username);
             if (user == null)
             {
                 return BadRequest("Không tìm thấy người dùng.");
             }
 
-            // Kiểm tra xem password có khớp với người dùng tìm thấy không
             var isValidPassword = await _userManager.CheckPasswordAsync(user, password);
             if (!isValidPassword)
             {
                 return BadRequest("Sai username hoặc password.");
             }
 
-            // Nếu username và password đều hợp lệ, tạo token JWT và trả về kết quả thành công
+            var roles = await _userManager.GetRolesAsync(user);
             var tokenString = await GenerateJWTTokenAsync(user);
+
             dynamic result = new ExpandoObject();
             result.token = tokenString;
+            result.roles = roles;
             result.message = "Đăng nhập thành công.";
             return Ok(result);
         }
+
+
 
         public class LoginRequestModel
         {

@@ -28,13 +28,13 @@
             <li>
                 <a href="#">
                     <i class='bx icon fa fa-dashboard'></i>
-                    <span class="text">Message</span>
+                    <router-link class="text" to="/admin/customermanage">Customer Manage</router-link>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class='bx icon fa fa-dashboard'></i>
-                    <span class="text">Team</span>
+                    <router-link to="/admin/ordermanage" class="text">Order Manage</router-link>
                 </a>
             </li>
         </ul>
@@ -65,7 +65,7 @@ export default {
     },
     methods: {
         logout() {
-            localStorage.removeItem('token');
+            localStorage.removeItem('adminToken');
             this.$router.push('/admin/login');
         }
     }

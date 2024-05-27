@@ -22,7 +22,7 @@
                     </form>
                     <table>
                         <thead>
-                            <tr style="text-align: center;">
+                            <tr class="header-text">
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Image</th>
@@ -287,4 +287,5 @@ export default {
 <style scoped>
 @import '@/assets/style.css';
 @import '@/assets/pagination.css';
+
 </style>
