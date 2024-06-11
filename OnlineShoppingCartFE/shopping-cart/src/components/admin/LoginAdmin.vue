@@ -3,14 +3,14 @@
         <div class="container-login100"
             style="background-image:url(https://image.freepik.com/free-photo/happy-woman-doing-online-shopping-home_329181-4301.jpg)">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-5 col-md-offset-1">
+                <div class="row" style="margin-left: 0px;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style=" width:auto !important;">
                         <div class="login_topimg">
                         </div>
                         <div class="wrap-login100">
                             <span class="login100-form-title "> Login </span>
-                            <form class="login100-form validate-form" @submit.prevent="login">
+                            <form class="login100-form validate-form" @submit.prevent="login" style="margin: auto;">
                                 <div class="wrap-input100 validate-input m-b-16"
                                     data-validate="Valid email is required: ex@abc.xyz">
                                     <input class="input100" type="text" id="loginUsername" v-model="loginForm.username"
@@ -33,12 +33,13 @@
                                     <button type="submit" class="login100-form-btn">Login</button>
                                 </div>
                                 <!-- Hiển thị thông báo khi đăng nhập không thành công -->
-                                <div v-if="error" class="alert alert-danger mt-3" role="alert">
+                                <div style="text-align: center; width: 100%; margin: 0 auto; margin-top: 10px" v-if="error" class="alert alert-danger mt-3" role="alert">
                                     {{ error }}
                                 </div>
                             </form>
                         </div>
                     </div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
         </div>
@@ -94,11 +95,11 @@ export default {
                         this.error = 'Bạn không có quyền truy cập vào trang admin.';
                     }
                 } else {
-                    this.error = response.data.message || 'Unknown error occurred!';
+                    this.error = response.data.message || 'Sai thông tin đăng nhập hoặc mật khẩu!';
                 }
             } catch (error) {
                 console.error('Đã xảy ra lỗi khi đăng nhập:', error);
-                this.error = error.response?.data.message || 'Unknown error occurred!';
+                this.error = error.response?.data.message || 'Sai thông tin đăng nhập hoặc mật khẩu!';
             }
         }
     },

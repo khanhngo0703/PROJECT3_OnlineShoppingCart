@@ -276,30 +276,15 @@
                             <div class='col-sm-6 col-md-7 product-info-block'>
                                 <div class="product-info">
                                     <h1 class="name">{{ product.productName }}</h1>
-
-                                    <div class="rating-reviews m-t-20">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <div class="rating rateit-small"></div>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <div class="reviews">
-                                                    <a href="#" class="lnk">(13 Reviews)</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.row -->
-                                    </div><!-- /.rating-reviews -->
-
                                     <div class="stock-container info-container m-t-10">
                                         <div class="row">
                                             <div class="col-sm-2">
                                                 <div class="stock-box">
-                                                    <span class="label">Availability :</span>
+                                                    <span class="label">Description :</span>
                                                 </div>
                                             </div>
                                             <div class="col-sm-9">
                                                 <div class="stock-box">
-                                                    <span class="value">In Stock</span>
                                                 </div>
                                             </div>
                                         </div><!-- /.row -->
@@ -316,7 +301,6 @@
                                             <div class="col-sm-6">
                                                 <div class="price-box">
                                                     <span class="price">{{ product.price }}</span>
-                                                    <span class="price-strike">$900.00</span>
                                                 </div>
                                             </div>
 

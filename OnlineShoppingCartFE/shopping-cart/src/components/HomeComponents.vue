@@ -36,13 +36,12 @@
 
                     <div id="hero">
                         <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-                            <div class="item" style="background-image: url(assets/images/sliders/01.jpg);">
+                            <div class="item" style="background-image: url(assets/images/sliders/slide3.jpg);">
                                 <div class="container-fluid">
                                     <div class="caption bg-color vertical-center text-left">
-                                        <div class="slider-header fadeInDown-1">Top Brands</div>
-                                        <div class="big-text fadeInDown-1"> New Collections </div>
-                                        <div class="excerpt fadeInDown-2 hidden-xs"> <span>Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit.</span> </div>
+                                        <div class="slider-header fadeInDown-1">Top Quà Lưu Niệm</div>
+                                        <div class="big-text fadeInDown-1"> Arts Shop </div>
+                                        <div class="excerpt fadeInDown-2 hidden-xs"> <span>Chào mừng bạn đến với Art Shop, nơi đem đến cho bạn những lựa chọn thú vị.</span> </div>
                                         <div class="button-holder fadeInDown-3"> <a href="index.php?page=single-product"
                                                 class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop
                                                 Now</a> </div>
@@ -53,14 +52,13 @@
                             </div>
                             <!-- /.item -->
 
-                            <div class="item" style="background-image: url(assets/images/sliders/02.jpg);">
+                            <div class="item" style="background-image: url(assets/images/sliders/slide2.jpg);">
                                 <div class="container-fluid">
                                     <div class="caption bg-color vertical-center text-left">
-                                        <div class="slider-header fadeInDown-1">Spring 2016</div>
-                                        <div class="big-text fadeInDown-1"> Women <span class="highlight">Fashion</span>
+                                        <div class="slider-header fadeInDown-1">Top Quà Lưu Niệm</div>
+                                        <div class="big-text fadeInDown-1"> Arts <span class="highlight">Shop</span>
                                         </div>
-                                        <div class="excerpt fadeInDown-2 hidden-xs"> <span>Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur aut odit aut fugit</span> </div>
+                                        <div class="excerpt fadeInDown-2 hidden-xs"> <span>Chào mừng bạn đến với Art Shop, nơi đem đến cho bạn những lựa chọn thú vị.</span> </div>
                                         <div class="button-holder fadeInDown-3"> <a href="index.php?page=single-product"
                                                 class="btn-lg btn btn-uppercase btn-primary shop-now-button">Shop
                                                 Now</a> </div>
@@ -1278,15 +1276,15 @@
                             <div class="col-md-7 col-sm-7">
                                 <div class="wide-banner cnt-strip">
                                     <div class="image"> <img class="img-responsive"
-                                            src="assets\images\banners\home-banner1.jpg" alt=""> </div>
+                                            src="assets\images\banners\home-banner4.jpg" alt=""> </div>
                                 </div>
                                 <!-- /.wide-banner -->
                             </div>
                             <!-- /.col -->
                             <div class="col-md-5 col-sm-5">
                                 <div class="wide-banner cnt-strip">
-                                    <div class="image"> <img class="img-responsive"
-                                            src="assets\images\banners\home-banner2.jpg" alt=""> </div>
+                                    <div class="image"> <img style="height: 270.65px; width: 100%;" class="img-responsive"
+                                            src="assets\images\banners\home-banner3.jpg" alt=""> </div>
                                 </div>
                                 <!-- /.wide-banner -->
                             </div>
@@ -1302,11 +1300,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="wide-banner cnt-strip">
-                                    <div class="image"> <img class="img-responsive"
-                                            src="assets\images\banners\home-banner.jpg" alt=""> </div>
+                                    <div class="image"> <img style="width: 100%;" class="img-responsive"
+                                            src="assets\images\banners\slide1.jpg" alt=""> </div>
                                     <div class="strip strip-text">
                                         <div class="strip-inner">
-                                            <h2 class="text-right">New Mens Fashion<br>
+                                            <h2 class="text-right">Arts Shop<br>
                                                 <span class="shopping-needs">Save up to 40% off</span>
                                             </h2>
                                         </div>

@@ -69,22 +69,6 @@
                         <div class="search-area" style="height:45px">
                             <form @submit.prevent="onSearchClick" style="display:inline">
                                 <div class="control-group">
-                                    <ul class="categories-filter animate-dropdown">
-                                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown"
-                                                href="category.html">Categories <b class="caret"></b></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li class="menu-header">Computer</li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                        href="category.html">- Clothing</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                        href="category.html">- Electronics</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                        href="category.html">- Shoes</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                        href="category.html">- Watches</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                     <input class="search-field" placeholder="Search here..." v-model="searchKeyword">
                                     <!-- <a class="search-button" href="#" style="height: 45px"></a> -->
                                     <button class="search-button" type="submit" style="height: 45px"></button>
@@ -103,7 +87,6 @@
                                 data-toggle="dropdown">
                                 <div class="items-cart-inner">
                                     <div class="basket"> <i class="glyphicon glyphicon-shopping-cart"></i> </div>
-                                    <div class="basket-item-count"><span class="count">2</span></div>
                                     <div class="total-price-basket"> <span class="lbl">cart</span> <span
                                             class="total-price"> </span> </div>
                                 </div>
