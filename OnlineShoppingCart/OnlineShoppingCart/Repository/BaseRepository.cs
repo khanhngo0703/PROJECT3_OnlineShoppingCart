@@ -61,14 +61,6 @@ namespace OnlineShoppingCart.Repository
             var result = await _dbSet.FindAsync(id);
             if (result != null)
             {
-                //result.IsDeleted = true;
-                //result.DeletedAt = DateTime.Now;
-                //result.DeletedBy = GetCurrentUserId();
-
-                //_dbSet.Update(result);
-
-                //await _context.SaveChangesAsync();
-                //return result;
                 _dbSet.Remove(result);
                 await _context.SaveChangesAsync();
                 return result;

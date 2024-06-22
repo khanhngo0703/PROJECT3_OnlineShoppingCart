@@ -10,7 +10,7 @@ namespace OnlineShoppingCart.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            this.SeedData();
+            //this.SeedData();
         }
 
         public virtual DbSet<Product> Products { get; set; }

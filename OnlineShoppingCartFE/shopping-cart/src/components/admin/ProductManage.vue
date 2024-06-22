@@ -84,7 +84,8 @@
                     <textarea id="description" v-model="currentProduct.description" required></textarea>
 
                     <label for="barCode">Bar Code</label>
-                    <textarea id="barCode" v-model="currentProduct.barCode" required></textarea>
+                    <input type="text" id="barCode" v-model="currentProduct.barCode" required>
+                    <!-- <textarea id="barCode" v-model="currentProduct.barCode" required></textarea> -->
 
                     <label for="categoryId">Category</label>
                     <select id="categoryId" v-model="currentProduct.categoryId" required>

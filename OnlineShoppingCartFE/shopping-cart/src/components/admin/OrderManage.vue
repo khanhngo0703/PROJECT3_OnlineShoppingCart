@@ -43,8 +43,7 @@
                                 <td>{{ o.customerAddress }}</td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn-update" @click="viewDetails(o.billId)">Xem chi
-                                            tiết</button>
+                                        <button type="button" class="btn-update" @click="viewDetails(o.billId)">View Details</button>
                                     </div>
                                 </td>
                             </tr>

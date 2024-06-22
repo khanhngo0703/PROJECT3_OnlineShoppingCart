@@ -9,7 +9,7 @@
                         <div class="login_topimg">
                         </div>
                         <div class="wrap-login100">
-                            <span class="login100-form-title "> Login </span>
+                            <span style="margin-bottom: 30px" class="login100-form-title "> Login Admin </span>
                             <form class="login100-form validate-form" @submit.prevent="login" style="margin: auto;">
                                 <div class="wrap-input100 validate-input m-b-16"
                                     data-validate="Valid email is required: ex@abc.xyz">

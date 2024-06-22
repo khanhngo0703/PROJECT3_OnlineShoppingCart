@@ -43,7 +43,7 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr v-for="(product, index) in cart" :key="index">
+                                    <tr v-for="(product, index) in formattedCart" :key="index">
                                         <td class="romove-item"><a @click.prevent="removeFromCart(index)" href="#"
                                                 title="cancel" class="icon"><i class="fa fa-trash-o"></i></a></td>
                                         <td class="cart-image">
@@ -71,10 +71,10 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="cart-product-sub-total"><span class="cart-sub-total-price">${{
-                                            product.price * product.quantity }}</span></td>
-                                        <td class="cart-product-grand-total"><span class="cart-grand-total-price">${{
-                                            product.price * product.quantity }}</span></td>
+                                        <td class="cart-product-sub-total"><span class="cart-sub-total-price">{{
+                                            product.formattedSubtotal }}</span></td>
+                                        <td class="cart-product-grand-total"><span class="cart-grand-total-price">{{
+                                            product.formattedSubtotal }}</span></td>
                                     </tr>
                                 </tbody><!-- /tbody -->
 
@@ -91,12 +91,10 @@
                                 <tr>
                                     <th>
                                         <div class="cart-sub-total">
-                                            Subtotal<span class="inner-left-md">${{ cart.reduce((acc, product) => acc +
-                                                product.price * product.quantity, 0) }}</span>
+                                            Subtotal<span class="inner-left-md">{{ formattedSubtotal }}</span>
                                         </div>
                                         <div class="cart-grand-total">
-                                            Grand Total<span class="inner-left-md">${{ cart.reduce((acc, product) => acc
-                                                + product.price * product.quantity, 0) }}</span>
+                                            Grand Total<span class="inner-left-md">{{ formattedSubtotal }}</span>
                                         </div>
                                     </th>
                                 </tr>
@@ -115,7 +113,7 @@
 
                     <div class="col-md-8 col-sm-12 form-xac-nhan">
                         <h3>Thông tin nhận hàng</h3>
-                        <form action="">
+                        <form @submit.prevent="submitForm">
                             <div class="row">
                                 <div class="col-md-6">
                                     <span>Họ và tên</span>
@@ -149,8 +147,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <button type="submit" class="submit-form">Xác nhận
+                                đặt hàng</button>
                         </form>
-                        <button @click="submitForm" type="submit" class="submit-form">Xác nhận đặt hàng</button>
+                        
 
                     </div>
                 </div><!-- /.shopping-cart -->
@@ -177,8 +177,6 @@ export default {
     data() {
         return {
             cart: [],
-            // billDetail: [],
-            // bill: [],
             currentCustomers: {
                 fullName: "",
                 email: "",
@@ -187,6 +185,34 @@ export default {
                 note: ""
             },
             order: []
+        }
+    },
+    computed: {
+        formattedCart() {
+            return this.cart.map(product => ({
+                ...product,
+                formattedPrice: new Intl.NumberFormat('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND'
+                }).format(product.price),
+                formattedSubtotal: new Intl.NumberFormat('vi-VN', {
+                    style: 'currency',
+                    currency: 'VND'
+                }).format(product.price * product.quantity)
+            }));
+        },
+        formattedSubtotal() {
+            const total = this.cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
+            return new Intl.NumberFormat('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            }).format(total);
+        }
+    },
+    watch: {
+        '$store.state.isLoggedIn'(newValue) {
+            // Khi trạng thái đăng nhập thay đổi, kiểm tra và cập nhật các trường required
+            this.updateRequiredFields(newValue);
         }
     },
     methods: {
@@ -218,6 +244,19 @@ export default {
             }
         },
         async submitForm() {
+            if (!this.cart.length) {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Giỏ hàng của bạn trống!',
+                    text: 'Vui lòng thêm sản phẩm vào giỏ hàng trước khi đặt hàng.',
+                }).then(() => {
+                    // Chuyển hướng đến trang chủ và load lại trang
+                    this.$router.push('/');
+                    // window.location.reload();
+                });
+                return; // Ngăn chặn các hành động tiếp theo nếu giỏ hàng rỗng
+            }
+
             const isLoggedIn = localStorage.getItem('customerToken');
 
             if (!isLoggedIn) {
@@ -299,14 +338,6 @@ export default {
                         });
 
                     })
-                    // var billUrl = process.env.VUE_APP_BASE_API_URL + "/Bills/InsertFullDetail";
-                    // const billResponse = await axios.post(billUrl, order);
-                    // console.log(billResponse);
-                    // Swal.fire({
-                    //     icon: 'success',
-                    //     title: 'Đặt hàng thành công!',
-                    //     text: 'Đơn hàng của bạn đã được gửi.',
-                    // });
                 } catch (error) {
                     console.error(error);
                     Swal.fire({
@@ -316,6 +347,12 @@ export default {
                     });
                 }
             }
+        },
+        updateRequiredFields(isLoggedIn) {
+            const formInputs = document.querySelectorAll('.form-xac-nhan input[required]');
+            formInputs.forEach(input => {
+                input.required = isLoggedIn;
+            });
         }
     },
     mounted() {

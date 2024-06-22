@@ -12,9 +12,9 @@
                     <i style="margin-top: 8px;" class="fa fa-key"></i>
                     <input type="password" class="form-input" placeholder="Mật khẩu" v-model="loginForm.password"
                         required>
-                    <div id="eye">
+                    <!-- <div id="eye">
                         <i class="fa fa-eye"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="from-h">
                     <h5><router-link to="/forgotpassword">Quên mật khẩu?</router-link></h5>

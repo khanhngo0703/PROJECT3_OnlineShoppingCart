@@ -8,14 +8,14 @@
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Order Manage</h1>
+                    <h1>Order Details Manage</h1>
                 </div>
             </div>
 
             <div class="table-data">
                 <div class="order">
                     <div class="head">
-                        <h3>Order Manage</h3>
+                        <h3>Order Details Manage</h3>
                     </div>
                     <table>
                         <thead>
@@ -31,7 +31,7 @@
                                 <td>{{ detail.billId }}</td>
                                 <td>{{ detail.productName }}</td>
                                 <td>{{ detail.quantity }}</td>
-                                <td>{{ detail.price }}</td>
+                                <td>{{ formatCurrency(detail.price) }}</td>
                             </tr>
                         </tbody>
                         <div class="total-price" style="font-size: 20px; font-style: italic;">
@@ -89,10 +89,22 @@ export default {
         },
         calculateTotalPrice() {
             // Tính tổng giá của tất cả các sản phẩm
-            return this.orderDetailsData.reduce((total, detail) => {
+            const totalPrice = this.orderDetailsData.reduce((total, detail) => {
                 return total + detail.price;
             }, 0);
-        }
+
+            // Định dạng tổng giá tiền sang VND
+            return totalPrice.toLocaleString('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+        },
+        formatCurrency(price) {
+            return price.toLocaleString('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            });
+        },
     },
     mounted() {
         this.loadOrderDetailsData();

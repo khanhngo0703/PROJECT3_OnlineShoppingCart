@@ -16,17 +16,17 @@
                     <i style="margin-top: 8px;" class="fa fa-key"></i>
                     <input type="password" class="form-input" placeholder="Mật khẩu" v-model="registerForm.password"
                         required>
-                    <div id="eye">
+                    <!-- <div id="eye">
                         <i class="fa fa-eye"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="form-group">
                     <i style="margin-top: 8px;" class="fa fa-key"></i>
                     <input type="password" class="form-input" placeholder="Nhập lại mật khẩu"
                         v-model="registerForm.retypePassword" required>
-                    <div id="eye">
+                    <!-- <div id="eye">
                         <i class="fa fa-eye"></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <span v-if="passwordMismatch" class="error-message">Mật khẩu và mật khẩu nhập lại không
